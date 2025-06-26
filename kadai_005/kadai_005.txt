@@ -1,0 +1,40 @@
+PS C:\Users\yuco> cd C:\samurai
+PS C:\samurai> mkdir git_challenge
+
+
+    ディレクトリ: C:\samurai
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/06/18     22:30                git_challenge
+
+
+PS C:\samurai> cd C:\samurai\git_challenge
+PS C:\samurai\git_challenge> git init
+Initialized empty Git repository in C:/samurai/git_challenge/.git/
+PS C:\samurai\git_challenge> echo "Hello, world!" > hello_world.txt
+PS C:\samurai\git_challenge> git add hello_world.txt
+PS C:\samurai\git_challenge> git commit -m "Hello, world!を追加"  
+[main (root-commit) 04f46aa] Hello, world!を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\samurai\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\samurai\git_challenge> git add hello_world.txt
+PS C:\samurai\git_challenge> git commit -m "こんにちは、世界！を追記"
+[main c02553d] こんにちは、世界！を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\samurai\git_challenge> git log --oneline
+c02553d (HEAD -> main) こんにちは、世界！を追記
+04f46aa Hello, world!を追加
+PS C:\samurai\git_challenge> cd C:\samurai\git_challenge
+PS C:\samurai\git_challenge> mkdir kadai_005
+
+
+    ディレクトリ: C:\samurai\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/06/18     22:39                kadai_005
+
